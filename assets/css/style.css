@@ -32,10 +32,15 @@ a,
 strong,
 p,
 span,
+label,
 html {
   font-family: "Poppins", sans-serif !important;
 }
 
+h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
 h3 {
   font-size: 28px;
   margin: 10px 0;
@@ -50,6 +55,9 @@ h4 {
   font-size: 24px;
 }
 @media (max-width: 767px) {
+  h1 {
+    font-size: 28px;
+  }
   h3 {
     font-size: 22px;
   }
@@ -62,6 +70,9 @@ h4 {
 }
 
 @media (max-width: 575px) {
+  h1 {
+    font-size: 22px;
+  }
   h3 {
     font-size: 20px;
   }
@@ -90,6 +101,23 @@ a {
   border: solid var(--white) 1px;
   background-color: var(--light-black);
 }
+
+.main-btn {
+  background: var(--primary-blue);
+  border: solid #1898d900 2px;
+  color: var(--white);
+  font-weight: 600;
+  padding: 5px 25px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: 0.5s ease;
+}
+.main-btn:hover {
+  background-color: var(--full-black);
+  border-color: var(--full-black);
+}
+
 .wrapper {
   overflow: hidden;
 }
@@ -806,19 +834,19 @@ a {
   font-weight: 600;
   color: var(--full-black);
 }
-.about-section .about-text {
+.about-text {
   margin-top: 40px;
 }
-.about-section .about-text p {
+.about-text p {
   color: var(--light-black);
 }
-.about-section .about-text p a {
+.about-text p a {
   color: var(--full-black);
 }
-.about-section .about-text p a:hover {
+.about-text p a:hover {
   text-decoration: underline;
 }
-.about-section .about-text ul {
+.about-text ul {
   padding-left: 20px;
 }
 
@@ -982,7 +1010,7 @@ a {
   margin-right: 5px;
   font-size: 12px;
 }
-.footer ul li a:hover{
+.footer ul li a:hover {
   text-decoration: underline;
 }
 .footer .footer-bottom img {
@@ -995,3 +1023,774 @@ a {
       FOOTER SECTION END   
 ===============================================
 */
+
+/* ===========================================    MANUFACTURES ============================================= */
+
+/* 
+===============================================
+     HERO BANNER SECTION START   
+===============================================
+*/
+.hero-banner {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  /* background: url("../imgs/dunlop-banner.jpg") center top no-repeat; */
+  background: var(--full-black) center top no-repeat;
+  background-size: cover !important;
+  height: 344px;
+  width: 100%;
+}
+.hero-banner .banner-text h1 {
+  color: var(--white);
+}
+/* 
+===============================================
+HERO BANNER SECTION START
+===============================================
+*/
+.man-search {
+  padding: 20px 15px;
+}
+
+.man-search .search-wrap {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: var(--grey);
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.man-search .search-wrap .search-btn {
+  background: var(--primary-blue);
+  border: solid var(--primary-blue) 2px;
+  color: var(--white);
+  font-weight: 600;
+  padding: 8px 25px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: 0.5s ease;
+}
+.man-search .search-wrap .search-btn:hover {
+  border-color: var(--full-black);
+  background-color: var(--full-black);
+}
+.man-search .search-wrap select {
+  height: 45px;
+}
+.man-search .search-wrap h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 7px 0;
+}
+
+.man-search .search-wrap .search-reg-number .reg input {
+  background: #ffcd20 url("../imgs/gb.png") left no-repeat;
+  background-size: contain;
+  text-transform: uppercase;
+  height: 45px;
+  border-radius: 4px;
+  padding: 8px 36px 7px 46px;
+  padding-left: 70px;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: none;
+}
+
+/* 
+===============================================
+  SEARCH SECTION START
+===============================================
+*/
+
+/* 
+===============================================
+  TYRES START
+===============================================
+*/
+.tyres-detail {
+  margin: 60px 0;
+}
+
+.tyres {
+  margin-top: 70px;
+}
+.tyres h3 {
+  font-size: 36px;
+}
+.tyres .side h5 {
+  color: var(--white);
+  background: var(--full-black);
+  margin: 0;
+  padding: 15px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  font-size: 16px;
+}
+.tyres .tyres-manu {
+  border: 1px solid var(--grey);
+  max-height: 400px;
+  overflow-y: auto;
+  border-right: 0;
+}
+.tyres .tyres-manu ul {
+  list-style: none;
+  padding: 0;
+}
+.tyres .tyres-manu ul li a {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  padding: 10px 10px;
+  border-bottom: 1px dashed var(--grey);
+  position: relative;
+  color: var(--full-black);
+}
+.tyres .tyres-manu.pattern ul li a i {
+  display: none;
+}
+
+.tyres .tyres-manu ul li a i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #909090;
+}
+
+.tyres .tyres-manu ul li a.active,
+.tyres .tyres-manu ul li a:hover {
+  background-color: var(--grey);
+}
+
+.tyres .tyre-card {
+  border: 1px solid var(--grey);
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+}
+.tyres .tyre-card .trye-img {
+  max-width: 200px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+.tyres .tyre-card .trye-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.tyres .tyre-card .tyre-card-text > a {
+  font-size: 17px;
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+.tyres .tyre-card .tyre-card-text > a:hover {
+  color: var(--full-black);
+}
+.tyres .tyre-card .tyre-card-text p {
+  font-size: 17px;
+  margin: 15px 0;
+  margin-top: 0;
+}
+.tyres .tyre-card .tyre-card-text p strong {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.tyres .tyre-card .tyre-card-text .tyre-card-btn a {
+  background: var(--primary-blue);
+  border: solid #1898d900 2px;
+  color: var(--white);
+  font-weight: 600;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.tyres .tyre-card .tyre-card-text .tyre-card-btn a:hover {
+  color: var(--white);
+  background-color: var(--full-black);
+}
+
+@media (max-width: 1199px) {
+  .tyres .tyre-card .tyre-card-text p strong {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 575px) {
+  .tyres .tyre-card .trye-img {
+    margin: auto;
+  }
+  .tyres .tyre-card {
+    border: 1px solid var(--grey);
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+/* 
+===============================================
+  TYRES END
+===============================================
+*/
+
+/* ===========================================    MANUFACTURES ============================================= */
+
+/* ===========================================    TYRE PATTERN ============================================= */
+
+.pattern-container {
+  max-width: 1160px;
+}
+.tyre-pattern h2 {
+  font-size: 36px;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .tyre-pattern {
+    margin: 40px 0;
+  }
+  .tyre-pattern .tyres {
+    margin-top: 20px;
+  }
+  .tyre-pattern h2 {
+    font-size: 26px !important;
+  }
+}
+.tyre-pattern .pattern-card {
+  margin-bottom: 15px 0;
+}
+.tyre-pattern .pattern-card .patt-card-head {
+  display: flex;
+  justify-content: space-between;
+  height: 130px;
+  overflow: hidden;
+  border-bottom: 2px solid var(--full-black);
+}
+.tyre-pattern .pattern-card .patt-card-head .pt-img {
+  width: 90px;
+}
+.tyre-pattern .pattern-card .patt-card-head .pt-img img {
+  width: 100%;
+}
+
+.tyre-pattern .pattern-card .patt-card-head .feature ul li {
+  margin-bottom: 5px;
+}
+.tyre-pattern .pattern-card .patt-card-head .feature ul li span {
+  display: inline-block;
+  width: 33px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: var(--white);
+  background-color: var(--dark-green);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.tyre-pattern .pattern-card .patt-card-head .feature ul li span.green {
+  background-color: var(--green);
+}
+.tyre-pattern .pattern-card .patt-card-head .feature ul li span.orange {
+  background-color: var(--orange);
+}
+
+.tyre-pattern .pattern-card .patt-card-head .feature ul li span.black {
+  background-color: var(--light-black);
+}
+
+.tyre-pattern .pattern-card .patt-card-head .feature ul li img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+.tyre-pattern .pattern-card .tyre-brand {
+  border-bottom: 2px solid var(--full-black);
+  text-align: center;
+  padding: 3px 0;
+}
+.tyre-pattern .pattern-card .tyre-brand img {
+  height: 40px;
+}
+.tyre-pattern .pattern-card .tyre-detail {
+  padding: 10px 0;
+  border-bottom: 2px solid var(--full-black);
+}
+.tyre-pattern .pattern-card .tyre-detail h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.tyre-pattern .pattern-card .tyre-detail p {
+  font-size: 14px;
+  margin: 0;
+}
+.tyre-pattern .pattern-card .durability {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-bottom: 2px solid var(--full-black);
+  padding: 7px 0;
+}
+.tyre-pattern .pattern-card .durability img {
+  height: 22px;
+  object-fit: contain;
+}
+
+.tyre-pattern .pattern-card .price {
+  padding: 10px;
+}
+.tyre-pattern .pattern-card .price .price-label {
+  padding: 15px 10px 15px;
+  background: var(--light-grey);
+  border: solid rgba(0, 0, 0, 0.1) 1px;
+  margin: 10px 0;
+  border-radius: 4px;
+  text-align: center;
+}
+.tyre-pattern .pattern-card .price .price-label h4 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+}
+.tyre-pattern .pattern-card .price .price-label p {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* ===========================================    TYRE PATTERN  ============================================= */
+
+/* ===========================================    BOOKING  ============================================= */
+.booking-steps {
+  position: relative;
+  /* background: linear-gradient(-180deg, #293c4f 41%, #fff 35%); */
+  padding-top: 20px;
+}
+.booking-steps::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 43px;
+  background-color: #293c4f;
+}
+.booking-steps .step {
+  text-align: center;
+  flex: 1;
+  position: relative;
+  isolation: isolate;
+}
+.booking-steps .step:first-child.active::before {
+  content: "";
+  position: absolute;
+  left: 00%;
+  top: 22px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-blue);
+  z-index: -1;
+}
+.booking-steps .step.active:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 22px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-blue);
+  z-index: -1;
+}
+.booking-steps .step:last-child.active:after {
+  left: 00%;
+}
+.booking-steps .step .step-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  color: var(--primary-blue);
+  background-color: var(--white);
+  border-radius: 50%;
+}
+.booking-steps .step .step-icon i {
+  font-size: 20px;
+}
+.booking-steps .step p {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--full-black);
+  height: 50px;
+}
+.booking-steps .step.active .step-icon {
+  color: var(--white);
+  background-color: var(--primary-blue);
+}
+
+.booking-steps .step.active p {
+  color: var(--primary-blue);
+}
+
+@media (max-width: 767px) {
+  .booking-steps .step p {
+    font-size: 10px;
+  }
+
+  .booking-steps .step .step-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .booking-steps .step .step-icon i {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .step-container {
+    padding: 0 !important;
+  }
+  .booking-steps .step {
+    margin-top: 5px;
+  }
+  .booking-steps .step p {
+    font-size: 8px;
+  }
+
+  .booking-steps .step .step-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .booking-steps .step .step-icon i {
+    font-size: 12px;
+  }
+
+  .booking-steps .step:first-child.active::before {
+    content: "";
+    position: absolute;
+    left: 00%;
+    top: 16px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-blue);
+    z-index: -1;
+  }
+  .booking-steps .step.active:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 16px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-blue);
+    z-index: -1;
+  }
+}
+
+/* 
+==========================================
+  BOOKING DETAIL START
+==========================================
+*/
+.booking-detail {
+  margin: 30px 0;
+}
+.booking-detail h4 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--full-black);
+  margin-bottom: 15px;
+}
+.booking-detail .dicount-offer {
+  border: 1px solid #e8e8e8;
+  background: #f6f6f6;
+  padding: 18px 15px;
+  position: relative;
+}
+.booking-detail .dicount-offer input {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 0 0 5px -3px var(--grey);
+}
+.booking-detail .dicount-offer .offer-card .offer-img {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  margin: auto;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.booking-detail .dicount-offer .offer-card .offer-img img {
+  width: 100%;
+}
+
+.booking-detail .dicount-offer .offer-card strong {
+  font-size: 13px;
+}
+.booking-detail .dicount-offer .offer-card h6 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.booking-detail .call-us {
+  background: var(--primary-blue);
+  padding: 15px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+.booking-detail .call-us h2 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--white);
+  margin: 0;
+  flex: 1;
+}
+.booking-detail .call-us a {
+  border: 1px solid var(--light-black);
+}
+
+.booking-detail .book-search {
+  margin-top: 30px;
+}
+.booking-detail .book-search input {
+  background: var(--yellow) url("../imgs/gb.png") left no-repeat;
+  background-size: contain;
+  padding-left: 44px;
+  text-transform: uppercase;
+  height: 45px;
+  border: 1px solid var(--light-black);
+  border-radius: 4px;
+  padding: 8px 36px 7px 46px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.booking-detail .book-search button {
+  height: 45px;
+}
+.booking-detail .book-search label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.booking-detail .or {
+  position: relative;
+  text-align: center;
+  font-size: 26px;
+  color: var(--full-black);
+  font-weight: 700;
+  margin: 20px 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.booking-detail .or:before,
+.booking-detail .or:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background-color: #cecece;
+}
+.booking-detail .or:before {
+  left: calc(50% + 30px);
+}
+.booking-detail .or:after {
+  right: calc(50% + 30px);
+}
+
+/* 
+==========================================
+  BOOKING DETAIL END
+==========================================
+*/
+
+/* 
+==========================================
+    CART SECTION START
+==========================================
+*/
+.cart {
+  width: 100%;
+  border: solid #ddd 1px;
+  border-radius: 8px;
+}
+.cart table tr td {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.cart table tr td .item-title p {
+  font-size: 13px;
+  margin: 0;
+}
+.cart table tr td .item-qty {
+  width: 80px;
+}
+
+.cart table tr td .remove-item {
+  all: unset;
+  text-align: right;
+  margin-left: auto;
+  display: inline-block;
+  color: var(--dark-orange);
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.cart table tfoot tr td {
+  border: none;
+  padding: 5px 10px;
+}
+.cart table tfoot tr td strong {
+  font-size: 14px;
+  width: 73px;
+  display: block;
+  text-align: right;
+}
+
+/* 
+==========================================
+    CART SECTION END
+==========================================
+*/
+
+/* ===========================================    BOOKING   ============================================= */
+
+/* ===========================================    CHECKOUT PAGE   ============================================= */
+
+/* 
+========================================
+   CHECKOUT DETAILS START 
+========================================
+*/
+.checkout {
+  margin: 50px 0;
+}
+
+.checkout .checkout-form {
+  padding: 25px;
+  background: #fbfbfb;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.checkout .appointment-detail {
+  margin: 25px 0;
+}
+.checkout .appointment-detail table thead tr th {
+  background-color: #b6cbde;
+  border-color: #b6cbde;
+}
+.checkout .appointment-detail table tbody tr td:first-child {
+  min-width: 150px;
+}
+.checkout .appointment-detail table tbody tr td {
+  font-size: 14px;
+  padding: 10px;
+  vertical-align: middle;
+  border-color: #b6cbde;
+}
+.checkout .appointment-detail table tbody tr td strong {
+  font-size: 14px;
+}
+
+.checkout .form-check label a {
+  color: var(--full-black);
+  font-weight: 700;
+}
+.checkout .form-check input {
+  border: 1px solid #d1d1d1;
+}
+
+@media (max-width: 575px) {
+  .checkout .appointment-detail table tbody tr td strong {
+    font-size: 12px;
+  }
+
+  .checkout .form-check label a {
+    font-weight: 600;
+    font-size: 13px;
+  }
+}
+/* 
+========================================
+   CHECKOUT DETAILS END 
+========================================
+*/
+
+/* ===========================================    CHECKOUT PAGE   ============================================= */
+
+/* ===========================================    SERVICES PAGE   ============================================= */
+.qoutes-popup .license-plate {
+  background: #e8e8e8;
+  border-radius: 5px;
+  padding: 0 10px;
+  padding-top: 4px;
+  min-height: auto;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.qoutes-popup .license-plate  button{
+  height: 36px;
+}
+.qoutes-popup  .form-check label{
+  font-size: 12px;
+  font-weight: 600;
+}
+.qoutes-popup .modal-footer .b-close{
+  background-color: var(--grey);
+}
+.qoutes-popup .modal-footer .main-btn{
+  font-size: 14px;
+  text-transform: none;
+  background-color: var(--dark-blue);
+  opacity: .8;
+}
+/* ===========================================    SERVICES PAGE   ============================================= */
+
+/* ===========================================    FORMS    ============================================= */
+
+.form-wrap label {
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.form-wrap label span {
+  color: red;
+}
+.form-wrap input::placeholder {
+  color: rgb(175, 175, 175);
+}
+.form-wrap input:not([type="checkbox"], [type="radio"]) {
+  height: 36px;
+  padding: 6px 12px;
+  color: var(--light-black);
+}
+
+.form-wrap .input-group-text {
+  height: 36px;
+}
+/* ===========================================    FORMS    ============================================= */
