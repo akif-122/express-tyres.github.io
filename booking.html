@@ -37,8 +37,8 @@
             <div class="top-right-account dropdown">
                 <a href="#" class="text-uppercase">MY ACCOUNT <i class="fa-solid fa-caret-down ms-2"></i></a>
                 <div class="dropdown-menu">
-                    <a href="#" class="dropdown-item">Sign Up / Regiser</a>
-                    <a href="#" class="dropdown-item">Login</a>
+                    <a href="signup.html" class="dropdown-item">Sign Up / Regiser</a>
+                    <a href="login.html" class="dropdown-item">Login</a>
                 </div>
             </div>
 
@@ -49,7 +49,7 @@
         <header class="header">
             <div class="row align-items-center">
                 <div class="col-6 col-md-4 col-lg-3">
-                    <a href="#">
+                    <a href="index.html">
                         <img class="logo" src="assets/imgs/logo.png" width="100%" alt="">
                     </a>
                 </div>
@@ -125,8 +125,8 @@
         </header>
         <!-- HEADER SECTION END -->
 
-         <!-- NAVBAR SECTION START -->
-         <nav class="navbar navbar-dark navbar-expand-lg main-nav p-0 ">
+        <!-- NAVBAR SECTION START -->
+        <nav class="navbar navbar-dark navbar-expand-lg main-nav p-0 ">
             <div class="container-xl">
                 <h4 class="d-lg-none">Navigation Menu</h4>
 
@@ -211,17 +211,17 @@
                                         <a href="services.html">Emergency Tyre Fitting</a>
                                     </div>
 
-                                   
+
 
                                 </div>
                             </div>
                         </li>
 
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">New & Part Worn Tyres</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="new-part-worn-tyre.html">New & Part Worn Tyres</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
 
 
                     </ul>
@@ -230,6 +230,8 @@
             </div>
         </nav>
         <!-- NAVBAR SECTION END -->
+
+
 
         <!-- BOOKING STEPS START-->
         <div class="container step-container">
@@ -284,13 +286,240 @@
         </div>
         <!-- BOOKING STEPS END -->
 
+
+
         <!-- BOOKING DETAIL -->
         <section class="booking-detail ">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
                         <h4>Select Fitting Time</h4>
-                        <p>Add a discount or FREE service to your order</p>
+
+                        <div class="row">
+                            <div class="col-2 col-sm-1 align-self-end">
+                                <div class=""></div>
+                                <div class="">
+                                    <h6>AM</h6>
+                                    <h6 class="mb-1 mb-sm-2">PM</h6>
+                                </div>
+                            </div>
+                            <div class="col-10 col-sm-11 pe-0 pe-sm-3">
+                                <form action="">
+                                    <div class="times owl-carousel owl-theme" id="date-slides">
+
+                                        <div class="text-center time-box">
+                                            <h6>Sat <br /> 06</h6>
+                                            <p>Jul</p>
+                                            <div class="avail-time">
+                                                <input type="radio" name="time" id="time-1">
+                                                <label for="time-1">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                                <input type="radio" name="time" id="time-2">
+                                                <label for="time-2">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center time-box">
+                                            <h6>Sun <br /> 7</h6>
+                                            <p>Jul</p>
+                                            <div class="avail-time">
+                                                <input type="radio" disabled name="time" id="time-3">
+                                                <label for="time-3">
+                                                    <span class="avail-btn not disabled">Not Available</span>
+                                                </label>
+                                                <input type="radio" name="time" id="time-4">
+                                                <label for="time-4">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center time-box">
+                                            <h6>Mon <br /> 08</h6>
+                                            <p>Jul</p>
+                                            <div class="avail-time">
+                                                <input type="radio" name="time" id="time-5">
+                                                <label for="time-5">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                                <input type="radio" name="time" id="time-6">
+                                                <label for="time-6">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center time-box">
+                                            <h6>Tue <br /> 09</h6>
+                                            <p>Jul</p>
+                                            <div class="avail-time">
+                                                <input type="radio" name="time" id="time-7">
+                                                <label for="time-7">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                                <input type="radio" name="time" id="time-8">
+                                                <label for="time-8">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center time-box">
+                                            <h6>Wed <br /> 10</h6>
+                                            <p>Jul</p>
+                                            <div class="avail-time">
+                                                <input type="radio" name="time" id="time-9">
+                                                <label for="time-9">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                                <input type="radio" name="time" id="time-10">
+                                                <label for="time-10">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="text-center time-box">
+                                            <h6>Thu<br /> 11</h6>
+                                            <p>Jul</p>
+                                            <div class="avail-time">
+                                                <input type="radio" name="time" id="time-11">
+                                                <label for="time-11">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                                <input type="radio" name="time" id="time-12">
+                                                <label for="time-12">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="text-center time-box">
+                                            <h6>Thu <br /> 12</h6>
+                                            <p>Jul</p>
+                                            <div class="avail-time">
+                                                <input type="radio" name="time" id="time-13">
+                                                <label for="time-13">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                                <input type="radio" name="time" id="time-14">
+                                                <label for="time-14">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="text-center time-box">
+                                            <h6>Sat <br /> 13</h6>
+                                            <p>Jul</p>
+                                            <div class="avail-time">
+                                                <input type="radio" name="time" id="time-15">
+                                                <label for="time-15">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                                <input type="radio" name="time" id="time-16">
+                                                <label for="time-16">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="text-center time-box">
+                                            <h6>Sub <br /> 14</h6>
+                                            <p>Jul</p>
+                                            <div class="avail-time">
+                                                <input type="radio" name="time" id="time-17">
+                                                <label for="time-17">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                                <input type="radio" name="time" id="time-18">
+                                                <label for="time-18">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="text-center time-box">
+                                            <h6>Mon <br /> 15</h6>
+                                            <p>Jul</p>
+                                            <div class="avail-time">
+                                                <input type="radio" name="time" id="time-19">
+                                                <label for="time-19">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                                <input type="radio" name="time" id="time-20">
+                                                <label for="time-20">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="text-center time-box">
+                                            <h6>Tue <br /> 16</h6>
+                                            <p>Jul</p>
+                                            <div class="avail-time">
+                                                <input type="radio" name="time" id="time-21">
+                                                <label for="time-21">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                                <input type="radio" name="time" id="time-22">
+                                                <label for="time-22">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="text-center time-box">
+                                            <h6>Wed <br /> 17</h6>
+                                            <p>Jul</p>
+                                            <div class="avail-time">
+                                                <input type="radio" name="time" id="time-23">
+                                                <label for="time-23">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                                <input type="radio" name="time" id="time-24">
+                                                <label for="time-24">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="text-center time-box">
+                                            <h6>Thu <br /> 18</h6>
+                                            <p>Jul</p>
+                                            <div class="avail-time">
+                                                <input type="radio" name="time" id="time-25">
+                                                <label for="time-25">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                                <input type="radio" name="time" id="time-26">
+                                                <label for="time-26">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="text-center time-box">
+                                            <h6>Fri <br /> 19</h6>
+                                            <p>Jul</p>
+                                            <div class="avail-time">
+                                                <input type="radio" name="time" id="time-27">
+                                                <label for="time-27">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                                <input type="radio" name="time" id="time-28">
+                                                <label for="time-28">
+                                                    <span class="avail-btn">Available</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </form>
+
+
+
+                            </div>
+                        </div>
+
+
+                        <p class="mt-4 mt-sm-5">Add a discount or FREE service to your order</p>
 
                         <form action="">
                             <div class="dicount-offer">
@@ -535,7 +764,7 @@
                                 <button class="main-btn">PROCEED TO BOOKING</button>
                             </a>
                         </div>
-                        
+
                     </div>
                     <!-- CART SECTION END -->
 
@@ -665,6 +894,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 
 
+    <script>
+        $('#date-slides').owlCarousel({
+            loop: false,
+            margin: 0,
+            dots: false,
+            nav: true,
+            items: 7,
+            slideBy: 7,
+            drag: false,
+            mouseDrag: false,
+            touchDrag: false,
+            responsive: {
+                0: {
+                    items: 7
+                }
+
+            }
+        });
+    </script>
 
 </body>
 

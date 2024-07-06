@@ -1497,6 +1497,155 @@ HERO BANNER SECTION START
   }
 }
 
+/* BOOKIG TIME */
+
+.times {
+  position: relative;
+}
+.times .owl-stage-outer {
+  /* pointer-events: none; */
+}
+.times .owl-nav {
+  position: absolute;
+  left: -80px;
+  top: -10px;
+  display: flex;
+  align-items: center;
+}
+.times .owl-nav button.disabled {
+  opacity: 1;
+}
+.times .owl-nav button {
+  all: unset;
+  line-height: 1;
+  width: 25px;
+  height: 30px;
+  border: 2px solid var(--dark-green) !important;
+  display: flex;
+  justify-content: center;
+  line-height: 27px;
+  align-items: center;
+  opacity: 1;
+  border-radius: 0 !important;
+}
+
+.times .owl-nav button span {
+  font-size: 40px;
+  line-height: 27px;
+  height: 10px !important;
+  scale: 12;
+  transform: translateY(-50px);
+}
+.times .owl-nav button:hover {
+  color: var(--white);
+  background-color: var(--dark-green) !important;
+}
+
+.times .time-box h6 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--full-black);
+}
+.times .time-box p {
+  color: var(--full-black);
+  margin: 0;
+}
+
+.times .time-box .avail-time {
+  padding: 0 2px;
+}
+.times .time-box .avail-time label {
+  display: block;
+}
+.times .time-box .avail-time input{
+  display: none;
+}
+.times .time-box .avail-time input:checked + label .avail-btn {
+  color: var(--white);
+  background-color: var(--dark-green);
+}
+
+.times .time-box .avail-time .avail-btn {
+  all: unset;
+  display: block;
+  width: 90%;
+  font-weight: 600;
+  color: var(--green);
+  cursor: pointer;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: center;
+  background-color: var(--white);
+  padding: 4px 2px;
+  box-sizing: border-box;
+  margin: 4px auto;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.times .time-box .avail-time input:disabled + label .avail-btn {
+  color: var(--dark-orange);
+  border-color: var(--dark-orange);
+  cursor: not-allowed;
+}
+/* .times .time-box .avail-time button.active {
+  color: var(--white);
+  background-color: var(--dark-green);
+} */
+
+@media (max-width: 575px) {
+  .times .time-box .avail-time .avail-btn {
+    width: 98%;
+    font-size: 10px;
+  }
+
+  .times .time-box h6 {
+    font-size: 12px;
+  }
+  .times .time-box p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 425px) {
+  .times .time-box .avail-time .avail-btn {
+    padding: 2px;
+  }
+
+  .times .owl-nav {
+    position: absolute;
+    left: -65px;
+    top: -10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .times .owl-nav button {
+    all: unset;
+    line-height: 1;
+    width: 20px;
+    height: 25px;
+    border: 1px solid var(--dark-green) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 0 !important;
+  }
+
+  .times .owl-nav button span {
+    font-size: 30px;
+    line-height: 23px;
+    height: 10px !important;
+    transform: translateY(-50px);
+  }
+}
 /* 
 ==========================================
   BOOKING DETAIL START
@@ -1752,21 +1901,21 @@ HERO BANNER SECTION START
   display: block;
   overflow: hidden;
 }
-.qoutes-popup .license-plate  button{
+.qoutes-popup .license-plate button {
   height: 36px;
 }
-.qoutes-popup  .form-check label{
+.qoutes-popup .form-check label {
   font-size: 12px;
   font-weight: 600;
 }
-.qoutes-popup .modal-footer .b-close{
+.qoutes-popup .modal-footer .b-close {
   background-color: var(--grey);
 }
-.qoutes-popup .modal-footer .main-btn{
+.qoutes-popup .modal-footer .main-btn {
   font-size: 14px;
   text-transform: none;
   background-color: var(--dark-blue);
-  opacity: .8;
+  opacity: 0.8;
 }
 /* ===========================================    SERVICES PAGE   ============================================= */
 
@@ -1784,6 +1933,9 @@ HERO BANNER SECTION START
 .form-wrap input::placeholder {
   color: rgb(175, 175, 175);
 }
+.form-wrap input {
+  border: 1px solid #6666;
+}
 .form-wrap input:not([type="checkbox"], [type="radio"]) {
   height: 36px;
   padding: 6px 12px;
@@ -1794,3 +1946,211 @@ HERO BANNER SECTION START
   height: 36px;
 }
 /* ===========================================    FORMS    ============================================= */
+
+/* ===========================================    CONTACT PAGE    ============================================= */
+
+/* 
+=========================================
+  CONTACT SECTION START
+=========================================
+*/
+.contacts {
+  margin: 50px 0;
+}
+.contacts .contact-label {
+  background: #293c4f;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px 30px 10px 20px;
+  margin: 0;
+  color: var(--white);
+  width: auto;
+  display: inline-block;
+  position: relative;
+  line-height: 17px;
+}
+.contacts .contact-label::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0;
+  border-top: 37px solid transparent;
+  border-left: 25px solid #293c4f;
+  /* border-bottom: 0 solid transparent; */
+}
+
+.contacts .contact-form,
+.contacts .contact-text {
+  padding: 12px 15px;
+}
+.contacts .contact-text h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contacts .contact-text h6 {
+  font-size: 16px;
+}
+.contacts .contact-text p {
+  font-size: 14px;
+}
+.contacts .contact-text p i {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.contacts .map iframe {
+  height: 400px;
+}
+.contacts .contact-form textarea,
+.contacts .contact-form input {
+  border-radius: 0;
+}
+
+@media (max-width: 425px) {
+  .contacts .map iframe {
+    height: 300px;
+  }
+}
+
+/* 
+=========================================
+  CONTACT SECTION END
+=========================================
+*/
+
+/* ===========================================    CONTACT PAGE    ============================================= */
+
+/* ====================================    REGISTRATION PAGE    ===================================== */
+
+/*
+=======================================
+  REGISTRATION FORM START
+=======================================
+*/
+.registration {
+  margin: 70px 0;
+}
+.registration .sign-up-wrap {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.registration .sign-up-wrap .form-check label {
+  font-weight: 400;
+}
+
+.registration .sign-up-wrap .form-check label a {
+  font-weight: 600;
+  color: var(--full-black);
+}
+/*
+=======================================
+  REGISTRATION FORM END
+=======================================
+*/
+
+/* ====================================    REGISTRATION PAGE    ====================================== */
+
+/* ====================================    BLOG PAGE    ====================================== */
+
+.blog {
+  margin: 60px 0;
+}
+.blog h2 {
+  font-weight: 600;
+}
+.blog .blog-card h4 a {
+  color: var(--full-black);
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: block;
+}
+.blog .blog-card h4 a:hover {
+  color: var(--primary-blue);
+}
+
+.blog .related-blog .card-header {
+  color: var(--white);
+  background-color: var(--primary-blue);
+  border-bottom: 1px solid var(--primary-blue);
+}
+.blog .related-blog a {
+  color: var(--full-black);
+}
+.blog .related-blog a i {
+  color: var(--primary-blue);
+  margin-right: 10px;
+}
+.blog .related-blog a:hover {
+  color: var(--primary-blue);
+}
+
+.blog-detail {
+  margin: 60px 0;
+}
+
+.blog-detail .blog-content h4 {
+  color: var(--dark-blue);
+  font-weight: 600;
+}
+
+.blog-detail .blog-content img {
+  width: 100%;
+}
+.blog-detail .blog-content h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--full-black);
+  margin-bottom: 30px;
+}
+.blog-detail .blog-content h4 {
+  color: var(--full-black);
+}
+.blog-detail .blog-content h4 a {
+  color: var(--primary-blue);
+}
+.blog-detail .blog-content h5 {
+  margin: 20px 0;
+  color: var(--full-black);
+  font-weight: 600;
+  font-size: 23px;
+}
+.blog-detail .blog-content p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.blog-detail .blog-content h6 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--full-black);
+  margin: 20px 0;
+}
+
+@media (max-width: 991px) {
+  .blog-detail .blog-content h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .blog-detail .blog-content h3 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 575px) {
+  .blog-detail {
+    margin: 30px 0;
+  }
+  .blog-detail .blog-content h3 {
+    font-size: 22px;
+  }
+}
+
+
+/* ====================================    BLOG PAGE    ====================================== */
