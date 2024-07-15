@@ -49,11 +49,11 @@
         </section>
         <!-- TOP BAR SECTION END -->
 
-        <!-- HEADER SECTION START -->
-        <header class="header">
+          <!-- HEADER SECTION START -->
+          <header class="header">
             <div class="row align-items-center">
                 <div class="col-6 col-md-4 col-lg-3">
-                    <a href="index.html">
+                    <a href="#">
                         <img class="logo" src="assets/imgs/logo.png" width="100%" alt="">
                     </a>
                 </div>
@@ -109,13 +109,40 @@
 
 
                             <div
-                                class="h-icon-box cart-box d-flex flex-column justify-content-center align-items-end align-items-sm-center">
-                                <div class="icon">
-                                    <i class="fa-solid fa-bag-shopping"></i>
-                                    <span id="count">0</span>
-                                </div>
-                                <div class="h-text">
-                                    <p>Your Cart</p>
+                                class="h-icon-box cart-box d-flex flex-column justify-content-center align-items-end align-items-sm-center dropdown">
+                                <a href="#" data-bs-toggle="dropdown">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <span id="count">0</span>
+                                    </div>
+                                    <div class="h-text">
+                                        <p>Your Cart</p>
+                                    </div>
+                                </a>
+
+                                <div class="dropdown-menu cart-dropdown">
+                                    <div class="cart border-0">
+                                        <div class="cart-item d-flex align-items-center">
+                                            <div class="img">
+                                                <img src="assets/imgs/tyres/econodrive.jpg" width="40px" alt="">
+                                            </div>
+                                            <p class="title">Summer Tyre Dunlop ECONO DRIVE 225/55</p>
+                                            <p class="mx-auto">x 1</p>
+                                            <p class="mx-auto">£127.05</p>
+                                            <a href="#" class="ms-auto"><i class="fa-solid fa-xmark"></i></a>
+                                        </div>
+
+                                        <div class="text-end">
+                                            <p>Sub-Total  <strong>£127.05</strong></p>
+                                            <p>Total  <strong>£127.05</strong></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                        <a href="cart.html" class="view-btn">View Cart</a>
+                                        <a href="booking.html" class="main-btn">Proceed To Booking</a>
+                                    </div>
+                                    
                                 </div>
                             </div>
 
@@ -129,7 +156,7 @@
         </header>
         <!-- HEADER SECTION END -->
 
-           <!-- NAVBAR SECTION START -->
+        <!-- NAVBAR SECTION START -->
         <nav class="navbar navbar-dark navbar-expand-lg main-nav p-0 ">
             <div class="container-xl">
                 <h4 class="d-lg-none">Navigation Menu</h4>
@@ -140,7 +167,7 @@
 
                 <div class="collapse navbar-collapse" id="myNav">
                     <ul class="navbar-nav">
-                        <li><a href="#" class="active"><i class="fa-solid fa-house"></i></a></li>
+                        <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i></a></li>
 
                         <li class="dropdown mega-dropdown">
                             <a href="#" data-bs-toggle="dropdown" class="dropdown-toggle">
@@ -215,7 +242,7 @@
                                         <a href="services.html">Emergency Tyre Fitting</a>
                                     </div>
 
-                                   
+
 
                                 </div>
                             </div>
@@ -234,6 +261,7 @@
             </div>
         </nav>
         <!-- NAVBAR SECTION END -->
+
 
        
 

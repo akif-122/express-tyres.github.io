@@ -262,6 +262,51 @@ a {
   color: var(--primary-blue);
 }
 
+.cart-dropdown{
+  width: 400px;
+  padding:  10px;
+}
+
+.cart-dropdown .cart-item p{
+  margin: 0 10px;
+}
+.cart-dropdown .cart-item .img{
+  margin-right: 10px;
+}
+.cart-dropdown .cart-item p.title{
+  width: 150px;
+}
+
+.cart-dropdown .cart-item a{
+  color: var(--dark-orange);
+}
+
+@media (max-width: 575px){
+  .cart-dropdown{
+    width: 400px;
+    max-width: 98vw;
+    padding:  10px;
+  }
+  .cart-dropdown .cart-item{
+    margin-bottom: 20px;
+  }
+
+  .cart-dropdown .cart-item p{
+    margin: 0 10px;
+  }
+  .cart-dropdown .cart-item .img{
+    margin-right: 5px;
+  }
+  .cart-dropdown .cart-item .img img{
+    width: 30px;
+  }
+  .cart-dropdown .cart-item p.title{
+    width: 120px;
+  }
+  .cart-dropdown .cart-item a{
+    color: var(--dark-orange);
+  }
+}
 /* 
 ===============================================
     HEADER SECTION END
@@ -305,7 +350,6 @@ a {
   position: static;
 }
 .main-nav .mega-dropdown-menu {
-  display: block;
   background-color: var(--full-black);
   border: none;
   border-radius: 0;
@@ -313,15 +357,22 @@ a {
   left: 50%;
   transform: translateX(-50%);
   top: 100%;
-  opacity: 0;
-  pointer-events: none;
   padding: 15px 20px;
   margin: 0;
   transition: 0.4s ease;
 }
-.main-nav .mega-dropdown:hover .mega-dropdown-menu {
-  opacity: 1;
-  pointer-events: all;
+
+@media (min-width: 992px) {
+  .main-nav .mega-dropdown-menu {
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .main-nav .mega-dropdown:hover .mega-dropdown-menu {
+    opacity: 1;
+    pointer-events: all;
+  }
 }
 
 .main-nav .mega-dropdown-menu a {
@@ -348,7 +399,6 @@ a {
     justify-content: space-between;
   }
   .main-nav .mega-dropdown-menu {
-    display: none;
     background-color: var(--white);
     width: calc(100%);
     left: 0;
@@ -357,9 +407,10 @@ a {
   .main-nav .mega-dropdown-menu a {
     color: var(--full-black);
   }
-  .main-nav .mega-dropdown:hover .mega-dropdown-menu {
-    display: block;
+  .main-nav ul li a.show {
+    background-color: var(--full-black);
   }
+ 
 }
 
 /* 
@@ -1264,6 +1315,8 @@ HERO BANNER SECTION START
 }
 .tyre-pattern .pattern-card {
   margin-bottom: 15px 0;
+  max-width: 300px;
+  margin: auto;
 }
 .tyre-pattern .pattern-card .patt-card-head {
   display: flex;
@@ -1558,7 +1611,7 @@ HERO BANNER SECTION START
 .times .time-box .avail-time label {
   display: block;
 }
-.times .time-box .avail-time input{
+.times .time-box .avail-time input {
   display: none;
 }
 .times .time-box .avail-time input:checked + label .avail-btn {
@@ -2152,5 +2205,16 @@ HERO BANNER SECTION START
   }
 }
 
-
 /* ====================================    BLOG PAGE    ====================================== */
+/* ====================================    CART PAGE   ====================================== */
+.cart-page {
+  margin: 50px auto;
+}
+.cart-page table tr td{
+  vertical-align: middle;
+}
+
+
+
+
+/* ====================================    CART PAGE    ====================================== */
